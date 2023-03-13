@@ -1,7 +1,20 @@
-var time = dayjs().format('HH:mm')
-var currentDay = dayjs().format("MM/DD/YYYY")
 
-console.log(currentDay,time);
+var time = dayjs().format('HH:mm')
+var date = dayjs().format("MM/DD/YYYY")
+
+function formatTime(date) {
+    const hours = dayjs.hours();
+    const minutes = dayjs.minutes();
+
+}
+
+function formatDate(date) {
+    date.getDay(dayjs)
+    
+}
+
+
+console.log(date,time);
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
