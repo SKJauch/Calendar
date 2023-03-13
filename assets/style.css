@@ -3,6 +3,22 @@ body {
   font-size: 16px;
 }
 
+.datetime {
+  font-size: 16px;
+  padding: 24px;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.date {
+  font-size: 3em;
+}
+
+.time {
+  margin-top: 12px;
+  font-size: 1.75em;
+}
+
 textarea {
   background: transparent;
   border: none;
