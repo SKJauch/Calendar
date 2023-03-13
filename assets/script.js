@@ -1,9 +1,13 @@
+var time = dayjs().format('HH:mm')
+var currentDay = dayjs().format("MM/DD/YYYY")
+
+console.log(currentDay,time);
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-
-$(function formatDate(dateObject) {
+//$(function formatDate(dateObject) {
 
   
 
@@ -25,8 +29,7 @@ $(function formatDate(dateObject) {
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+//});
 
-const dayJsObject = dayJs();
 
-console.log(dayJsObject.format("D/M/YYYY h:mm A"))
+//console.log(dayJsObject.format("D/M/YYYY h:mm A"))
