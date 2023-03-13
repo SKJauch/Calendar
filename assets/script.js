@@ -1,20 +1,39 @@
+const timeEl = document.querySelector(".time");
+const dateEl = document.querySelector(".date");
 
-var time = dayjs().format('HH:mm')
-var date = dayjs().format("MM/DD/YYYY")
+/**
+ * 
+ * @param {Date} date 
+ */
 
 function formatTime(date) {
-    const hours = dayjs.hours();
-    const minutes = dayjs.minutes();
-
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
 }
+
+/**
+ * 
+ * @param {Date} date
+ */
 
 function formatDate(date) {
-    date.getDay(dayjs)
-    
+    const day = day.getDay();
+    const month = month.getMonth();
+    const year = year.getYear();
+
 }
 
+setInterval(() => {
+  const now = new Date ();
 
-console.log(date,time);
+  timeEl.textContent = formatTime(now);
+  dateEl.textContent = formatDate(now);
+
+}, );
+
+//console.log()
+
+
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
