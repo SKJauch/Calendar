@@ -23,6 +23,7 @@ $(".saveBtn").on("click", function () {
   var text = $(this).siblings("textarea").val();
   var time = $(this).parent().attr("id").split("-")[1];
   localStorage.setItem(time, text);
+  localStorage.getItem(text,time);
 });
 
 //local storage get item, store in text area, start with parent which has the ID
