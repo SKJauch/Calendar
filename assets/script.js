@@ -24,17 +24,14 @@ $(".description").each(function(){
 })
 
 $(".saveBtn").on("click",function() {
-    var text = $(this).siblings("textarea").val()
-    var time = $(this).parent().attr("id").split("-")[1];
-    localStorage.setItem(time,text)
+    var text = $(this).siblings("textarea").val();
+    var time = $(this).parent().attr("id").split("-")[1]; 
+    localStorage.setItem(time,text);
+    localStorage.getItem('time','text');
 })   
 
-$(".SaveBtn").on("click",function() {
-  var time = $(this).parent().attr("id").split("-")[1]
-  var text = $(this).siblings("textarea").val()
-  localStorage.getItem(time)
-  localStorage.getItem(text)
-})
+
+
 
 
 
