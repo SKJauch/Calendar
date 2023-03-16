@@ -23,8 +23,18 @@ $(".saveBtn").on("click", function () {
   var text = $(this).siblings("textarea").val();
   var time = $(this).parent().attr("id").split("-")[1];
   localStorage.setItem(time, text);
-  localStorage.getItem(text,time);
+
 });
+
+  $(".time-block").each(function () {
+    var time = $(this).attr("id").split("-")[1];
+    var text = localStorage.getItem(time);
+    if (text !== null) {
+      $(this).find("textarea").val(text);  
+    }
+  
+    })
+
 
 //local storage get item, store in text area, start with parent which has the ID
 //grab #hour, children (textarea) .val set value to whatever is in local storage
